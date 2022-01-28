@@ -14,7 +14,7 @@ declare module '@vue/runtime-core' {
 // "export default () => {}" function below (which runs individually
 // for each client)
 const api = axios.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: '/',
   validateStatus: (status: number) => {
     return (status >= 200 && status <= 300) || status === 400 || status === 401;
   }

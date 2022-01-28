@@ -20,7 +20,7 @@
       </q-card>
     </q-dialog>
     <q-uploader
-      url="http://localhost:3000/files/upload"
+      url="/files/upload"
       label="Uploader"
       class="uploader"
       multiple
@@ -87,7 +87,7 @@ export default defineComponent({
     },
     openFile: async function(id: string, type: string) {
       if (type !== 'description') {
-        this.currentFile = `http://localhost:3000/files/${id}`;
+        this.currentFile = `/files/${id}`;
       }
       if (type === 'description') {
         const file = await api.get(`/files/${id}`);
