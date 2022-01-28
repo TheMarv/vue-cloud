@@ -1,0 +1,62 @@
+// app global css in SCSS form
+
+.userForm {
+  width: 33%;
+  min-width: 300px;
+  max-width: 450px;
+}
+
+.userNav {
+  display: flex;
+}
+
+.nav-item {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  color: white;
+  &:first-child {
+    margin-right: 1.5rem;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.q-uploader {
+  position: absolute;
+  bottom: 0;
+}
+
+.fileContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  .file {
+    display: flex;
+    flex-direction: column;
+    width: 96px;
+    height: 96px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}
+
+.q-dialog__inner--minimized > div {
+  max-width: 800px!important;
+  width: 800px!important;
+}
+
+.media {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
